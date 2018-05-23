@@ -7,6 +7,8 @@ git submodule add --force https://github.com/bling/vim-airline                 b
 git submodule add --force https://github.com/scrooloose/nerdcommenter          bundle/nerdcommenter           # 快速注释
 git submodule add --force https://github.com/thinca/vim-quickrun               bundle/vim-quickrun            # 快速执行
 git submodule add --force https://github.com/Lokaltog/vim-easymotion           bundle/vim-easymotion          # 快速跳转
+git submodule add --force https://github.com/ctrlpvim/ctrlp.vim                bundle/ctrlp.vim               # 文件搜索
+git submodule add --force https://github.com/tacahiroy/ctrlp-funky             bundle/ctrlp-funky             # ctrlp插件，模糊搜索当前文件的函数
 
 # git submodule add --force https://github.com/tpope/vim-pathogen.git            bundle/vim-pathogen            # 更好的插件管理
 # git submodule add --force https://github.com/Valloric/YouCompleteMe            bundle/YouCompleteMe           # 代码补全
@@ -22,8 +24,6 @@ git submodule add --force https://github.com/Lokaltog/vim-easymotion           b
 # git submodule add --force https://github.com/tpope/vim-surround                bundle/vim-surround            # 快速给词添加符号环绕
 # git submodule add --force https://github.com/tpope/vim-repeat                  bundle/vim-repeat              # 重复一个插件的操作
 # git submodule add --force https://github.com/terryma/vim-expand-region         bundle/vim-expand-region       # 区域选择
-# git submodule add --force https://github.com/ctrlpvim/ctrlp.vim                bundle/ctrlp.vim               # 文件搜索
-# git submodule add --force https://github.com/tacahiroy/ctrlp-funky             bundle/ctrlp-funky             # ctrlp插件，模糊搜索当前文件的函数
 # git submodule add --force https://github.com/vim-scripts/matchit.zip           bundle/matchit.zip             # 成对标签跳转,需要光标放在div等文字上
 # git submodule add --force https://github.com/terryma/vim-multiple-cursors      bundle/vim-multiple-cursors    # 多光标操作
 # git submodule add --force https://github.com/scrooloose/syntastic              bundle/syntastic               # 语法检查
