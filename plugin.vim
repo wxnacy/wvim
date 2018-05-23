@@ -118,3 +118,8 @@ let g:ctrlp_extensions = ['funky']
 " whitespace 配置
 "===============================
 map <leader><space> :FixWhitespace<cr>
+
+"===============================
+" emment-vim 配置
+"===============================
+let g:user_emmet_leader_key='<C-Z>'     " 设置快捷键
