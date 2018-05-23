@@ -6,6 +6,7 @@ git submodule add --force https://github.com/jistr/vim-nerdtree-tabs           b
 git submodule add --force https://github.com/bling/vim-airline                 bundle/vim-airline             # 状态栏
 git submodule add --force https://github.com/scrooloose/nerdcommenter          bundle/nerdcommenter           # 快速注释
 git submodule add --force https://github.com/thinca/vim-quickrun               bundle/vim-quickrun            # 快速执行
+git submodule add --force https://github.com/Lokaltog/vim-easymotion           bundle/vim-easymotion          # 快速跳转
 
 # git submodule add --force https://github.com/tpope/vim-pathogen.git            bundle/vim-pathogen            # 更好的插件管理
 # git submodule add --force https://github.com/Valloric/YouCompleteMe            bundle/YouCompleteMe           # 代码补全
@@ -18,7 +19,6 @@ git submodule add --force https://github.com/thinca/vim-quickrun               b
 # git submodule add --force https://github.com/mattn/emmet-vim                   bundle/emmet-vim               # 编辑html神器
 # git submodule add --force https://github.com/jiangmiao/auto-pairs              bundle/auto-pairs              # 成对标签自动补全
 # git submodule add --force https://github.com/kshenoy/vim-signature             bundle/vim-signature           # 书签展示以及快速跳转 增强vim的书签功能
-# git submodule add --force https://github.com/Lokaltog/vim-easymotion           bundle/vim-easymotion          # 快速跳转
 # git submodule add --force https://github.com/tpope/vim-surround                bundle/vim-surround            # 快速给词添加符号环绕
 # git submodule add --force https://github.com/tpope/vim-repeat                  bundle/vim-repeat              # 重复一个插件的操作
 # git submodule add --force https://github.com/terryma/vim-expand-region         bundle/vim-expand-region       # 区域选择
