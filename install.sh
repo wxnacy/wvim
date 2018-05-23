@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ROOT=${PWD}
-NAME=$1
+NAME=$1 
 
 
 # rm  ${HOME}/.vimrc
@@ -12,3 +12,4 @@ NAME=$1
 # ln -sf ${ROOT}/vimrc ${HOME}/.vimrc
 ln -sf ${ROOT}/vimrc.pathogen ${HOME}/.vimrc
 # ln -sf ${ROOT} ${HOME}/.vim
+
