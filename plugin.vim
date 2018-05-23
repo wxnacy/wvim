@@ -138,3 +138,16 @@ let g:easy_align_delimiters['#'] = { 'pattern': '#', 'ignore_groups': ['String']
 " closetag 配置
 "===============================
 let g:closetag_html_style=1
+
+"===============================
+" vim-multiple-cursors 配置
+"===============================
+let g:multi_cursor_use_default_mapping=0
+" Default mapping
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
+" let g:multi_cursor_start_word_key='g<C-n>'
+highlight multiple_cursors_cursor term=reverse cterm=reverse gui=reverse
+highlight link multiple_cursors_visual Visual
