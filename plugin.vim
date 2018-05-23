@@ -19,3 +19,25 @@ let NERDTreeHighlightCursorline = 1 " 高亮当前行
 " let NERDTreeQuitOnOpen = 1      " 从菜单打开文件后关闭菜单
 let NERDTreeWinPos ="left"      " 设置菜单在左侧打开，默认值
 
+"===============================
+" vim-nerdtree-tabs 配置
+"===============================
+let g:nerdtree_tabs_open_on_console_startup=1
+
+
+"===============================
+" NERDTree-git-plugin 配置
+"===============================
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
+let g:NERDTreeShowIgnoredStatus = 1
