@@ -56,3 +56,9 @@ let g:airline_right_alt_sep  = '❮'
 let g:airline_symbols.linenr = '¶'
 let g:airline_symbols.branch = '⎇'
 let g:airline#extensions#tabline#enabled = 1        " 是否打开tabline
+
+"===============================
+" nerdcommenter 配置
+"===============================
+let g:NERDSpaceDelims = 1       " 注释后添加空格
+" let g:NERDCompactSexyComs = 1

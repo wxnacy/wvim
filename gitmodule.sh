@@ -4,6 +4,7 @@ git submodule add --force https://github.com/scrooloose/nerdtree               b
 git submodule add --force https://github.com/Xuyuanp/nerdtree-git-plugin       bundle/nerdtree-git-plugin     # 配合nerdtree，显示文件git提交信息
 git submodule add --force https://github.com/jistr/vim-nerdtree-tabs           bundle/vim-nerdtree-tabs       # 配合nerdtree，多tab显示一个nerdtree
 git submodule add --force https://github.com/bling/vim-airline                 bundle/vim-airline             # 状态栏
+git submodule add --force https://github.com/scrooloose/nerdcommenter          bundle/nerdcommenter           # 快速注释
 
 # git submodule add --force https://github.com/tpope/vim-pathogen.git            bundle/vim-pathogen            # 更好的插件管理
 # git submodule add --force https://github.com/Valloric/YouCompleteMe            bundle/YouCompleteMe           # 代码补全
@@ -13,7 +14,6 @@ git submodule add --force https://github.com/bling/vim-airline                 b
 # git submodule add --force https://github.com/sjl/gundo.vim                     bundle/gundo.vim               # 查看文件编辑历史记录
 # git submodule add --force https://github.com/bronson/vim-trailing-whitespace   bundle/vim-trailing-whitespace # 快速去掉行尾空格
 # git submodule add --force https://github.com/majutsushi/tagbar                 bundle/tagbar                  # 文件标签菜单
-# git submodule add --force https://github.com/scrooloose/nerdcommenter          bundle/nerdcommenter           # 快速注释
 # git submodule add --force https://github.com/docunext/closetag.vim             bundle/closetag.vim            # 编辑xml/html,自动补全闭合标签
 # git submodule add --force https://github.com/mattn/emmet-vim                   bundle/emmet-vim               # 编辑html神器
 # git submodule add --force https://github.com/jiangmiao/auto-pairs              bundle/auto-pairs              # 成对标签自动补全
