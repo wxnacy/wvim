@@ -9,13 +9,13 @@ git submodule add --force https://github.com/thinca/vim-quickrun               b
 git submodule add --force https://github.com/Lokaltog/vim-easymotion           bundle/vim-easymotion          # 快速跳转
 git submodule add --force https://github.com/ctrlpvim/ctrlp.vim                bundle/ctrlp.vim               # 文件搜索
 git submodule add --force https://github.com/tacahiroy/ctrlp-funky             bundle/ctrlp-funky             # ctrlp插件，模糊搜索当前文件的函数
+git submodule add --force https://github.com/bronson/vim-trailing-whitespace   bundle/vim-trailing-whitespace # 快速去掉行尾空格
 
 # git submodule add --force https://github.com/tpope/vim-pathogen.git            bundle/vim-pathogen            # 更好的插件管理
 # git submodule add --force https://github.com/Valloric/YouCompleteMe            bundle/YouCompleteMe           # 代码补全
 # git submodule add --force https://github.com/altercation/vim-colors-solarized  bundle/vim-colors-solarized    # 配色方案
 # git submodule add --force https://github.com/junegunn/vim-easy-align           bundle/vim-easy-align          # 快速对齐
 # git submodule add --force https://github.com/sjl/gundo.vim                     bundle/gundo.vim               # 查看文件编辑历史记录
-# git submodule add --force https://github.com/bronson/vim-trailing-whitespace   bundle/vim-trailing-whitespace # 快速去掉行尾空格
 # git submodule add --force https://github.com/majutsushi/tagbar                 bundle/tagbar                  # 文件标签菜单
 # git submodule add --force https://github.com/docunext/closetag.vim             bundle/closetag.vim            # 编辑xml/html,自动补全闭合标签
 # git submodule add --force https://github.com/mattn/emmet-vim                   bundle/emmet-vim               # 编辑html神器
