@@ -185,6 +185,7 @@ inoremap <Leader>k <esc>ka
 inoremap <C-l> <esc>lxi
 
 " 复制和系统剪贴板交互
+" set clipboard = unname
 nnoremap <C-y> "+Y
 vnoremap <C-y> "+y
 " 黏贴系统剪切版的内容

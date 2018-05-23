@@ -1,4 +1,4 @@
-#!/usr/bin/evn bash
+#!/usr/bin/env bash
 
 git submodule add --force https://github.com/scrooloose/nerdtree               bundle/nerdtree                # 显示文件菜单栏
 git submodule add --force https://github.com/Xuyuanp/nerdtree-git-plugin       bundle/nerdtree-git-plugin     # 配合nerdtree，显示文件git提交信息
