@@ -62,3 +62,15 @@ let g:airline#extensions#tabline#enabled = 1        " 是否打开tabline
 "===============================
 let g:NERDSpaceDelims = 1       " 注释后添加空格
 " let g:NERDCompactSexyComs = 1
+
+"===============================
+" quickrun 配置
+"===============================
+let g:quickrun_config = {
+\   "_" : {
+\       "outputter" : "loclist",
+\   },
+\}
+let g:quickrun_no_default_key_mappings = 1
+nmap <Leader>r <Plug>(quickrun)
+map <F10> :QuickRun<CR>
