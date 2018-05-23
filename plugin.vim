@@ -123,3 +123,13 @@ map <leader><space> :FixWhitespace<cr>
 " emment-vim 配置
 "===============================
 let g:user_emmet_leader_key='<C-Z>'     " 设置快捷键
+
+"===============================
+" EasyAlign 配置
+"===============================
+vmap <Leader>a <Plug>(EasyAlign)
+nmap <Leader>a <Plug>(EasyAlign)
+if !exists('g:easy_align_delimiters')
+  let g:easy_align_delimiters = {}
+endif
+let g:easy_align_delimiters['#'] = { 'pattern': '#', 'ignore_groups': ['String'] }
