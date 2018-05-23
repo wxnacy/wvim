@@ -49,7 +49,8 @@ set formatoptions+=B
 
 " 主题
 set background=dark       		"配色主题的色系,注意，这不是什么背景色！dark 是暗色系，light 是亮色系。
-colorscheme desert              "配色主题的名称,:coloscheme 后键入<tab>可以自动补全 比较喜欢的desert,peachpuff,torte,elfload,slate
+" colorscheme desert              "配色主题的名称,:coloscheme 后键入<tab>可以自动补全 比较喜欢的desert,peachpuff,torte,elfload,slate
+colorscheme solarized
 
 " show
 set number						"显示行号"
