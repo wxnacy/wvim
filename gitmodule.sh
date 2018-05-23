@@ -15,6 +15,7 @@ git submodule add --force https://github.com/junegunn/vim-easy-align           b
 git submodule add --force https://github.com/jiangmiao/auto-pairs              bundle/auto-pairs              # 成对标签自动补全(无配置)
 git submodule add --force https://github.com/docunext/closetag.vim             bundle/closetag.vim            # 编辑xml/html,自动补全闭合标签
 git submodule add --force https://github.com/terryma/vim-multiple-cursors      bundle/vim-multiple-cursors    # 多光标操作
+git submodule add --force https://github.com/mileszs/ack.vim.git               bundle/ack.vim                 # 全局搜索插件
 
 # git submodule add --force https://github.com/tpope/vim-pathogen.git            bundle/vim-pathogen            # 更好的插件管理
 # git submodule add --force https://github.com/Valloric/YouCompleteMe            bundle/YouCompleteMe           # 代码补全
@@ -28,7 +29,6 @@ git submodule add --force https://github.com/terryma/vim-multiple-cursors      b
 # git submodule add --force https://github.com/vim-scripts/matchit.zip           bundle/matchit.zip             # 成对标签跳转,需要光标放在div等文字上
 # git submodule add --force https://github.com/scrooloose/syntastic              bundle/syntastic               # 语法检查
 # git submodule add --force https://github.com/dkprice/vim-easygrep.git          bundle/vim-easygrep            # 全局搜索插件
-# git submodule add --force https://github.com/mileszs/ack.vim.git               bundle/ack.vim                 # 全局搜索插件
 # git submodule add --force https://github.com/dyng/ctrlsf.vim.git               bundle/ctrlsf.vim              # 搜索增强
 # git submodule add --force https://github.com/artur-shaik/vim-javacomplete2.git bundle/vim-javacomplete2       # java                 代码不全
 # git submodule add --force https://github.com/pangloss/vim-javascript.git       bundle/vim-javascript          # javascript           语法高亮
