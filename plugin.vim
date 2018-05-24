@@ -157,3 +157,8 @@ highlight link multiple_cursors_visual Visual
 "===============================
 " let g:ackprg = 'ag --nogroup --nocolor --column'
 nmap <Leader><Leader>a :Ack<space>-i<space>
+
+"===============================
+" gundo 配置
+"===============================
+nnoremap <leader>H :GundoToggle<CR>
