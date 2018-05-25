@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 
-ROOT=${PWD}
+ROOT=${HOME}/.wvim
 NAME=$1
 
-git clone https://github.com/wxnacy/wvim ~/.wvim
+git clone https://github.com/wxnacy/wvim ${ROOT}
 
 
-echo "Run the following command to quickly use wvim\n"
-
+echo ''
+echo 'Run the following command to quickly use wvim'
+echo ''
 echo "  ln -sf ${ROOT}/vimrc ${HOME}/.vimrc"
 echo "  ln -sf ${ROOT} ${HOME}/.vim"
 
