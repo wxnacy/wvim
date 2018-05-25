@@ -18,4 +18,6 @@ echo "If you want to use plugins, Please run"
 echo ""
 echo "  cd ${ROOT} && ./install_plugin.sh"
 echo "  ln -sf ${ROOT}/vimrc.pathogen ${HOME}/.vimrc"
+echo ""
+
 
