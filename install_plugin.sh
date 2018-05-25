@@ -10,6 +10,7 @@ VER=${OSS[1]}
 
 
 if [ $SYS == 'ubuntu' ];then
+    sudo apt update -y
     sudo apt install -y ack-grep
 fi
 
