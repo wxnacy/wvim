@@ -6,7 +6,7 @@ SYS=${OSS[0]}
 VER=${OSS[1]}
 
 ROOT=${PWD}
-NAME=$1 
+NAME=$1
 
 
 # rm  ${HOME}/.vimrc
