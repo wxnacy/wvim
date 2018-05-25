@@ -19,6 +19,3 @@ echo ""
 echo "  cd ${ROOT} && ./install_plugin.sh"
 echo "  ln -sf ${ROOT}/vimrc.pathogen ${HOME}/.vimrc"
 
-
-# sudo apt -y update
-# sudo apt install -y ack-grep
