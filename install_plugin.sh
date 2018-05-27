@@ -14,3 +14,7 @@ if [ $SYS == 'ubuntu' ];then
     sudo apt install -y ack-grep
 fi
 
+if [ $SYS == 'centos' ];then
+    sudo yum update -y
+    sudo yum -y install epel-release ack
+fi
