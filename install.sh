@@ -3,7 +3,7 @@
 ROOT=${HOME}/.wvim
 NAME=$1
 
-git clone https://github.com/wxnacy/wvim ${ROOT}
+[ -d ${ROOT} ] || git clone https://github.com/wxnacy/wvim ${ROOT}
 
 
 echo ''
