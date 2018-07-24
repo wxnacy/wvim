@@ -2,7 +2,7 @@
 
 git submodule update --init --recursive
 
-OS=`curl -L https://raw.githubusercontent.com/wxnacy/wshell/master/bin/system/check | bash`
+OS=`curl -L https://raw.githubusercontent.com/wxnacy/wshell/master/bin/base/os | bash`
 OSS=(${OS})
 SYS=${OSS[0]}
 VER=${OSS[1]}
