@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+go get -u github.com/nsf/gocode
+
+cp "${GOPATH}/src/github.com/nsf/gocode/vim/autoload/gocomplete.vim" "bundle/gocode/autoload"
+cp "${GOPATH}/src/github.com/nsf/gocode/vim/ftplugin/go/gocomplete.vim" "bundle/gocode/ftplugin/go"
