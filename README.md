@@ -7,7 +7,7 @@
 执行
 
 ```bash
-$ curl -L https://raw.githubusercontent.com/wxnacy/wvim/master/install.sh | bash
+$ curl -L https://raw.githubusercontent.com/wxnacy/wvim/master/install | bash
 ```
 
 随后根据脚本提示完成操作即可使用。
