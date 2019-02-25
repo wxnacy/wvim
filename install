@@ -3,7 +3,7 @@
 ROOT=${HOME}/.wvim
 NAME=$1
 
-[ -d ${ROOT} ] || git clone https://github.com/wxnacy/wvim ${ROOT}
+[ -d ${ROOT} ] || git clone --init --recursive https://github.com/wxnacy/wvim ${ROOT}
 
 OS=`curl -L https://raw.githubusercontent.com/wxnacy/wshell/master/bin/base/os | bash`
 OSS=(${OS})
@@ -41,12 +41,12 @@ if [[ -d ${HOME}/.vimrc || -f ${HOME}/.vimrc ]];then
     echo "  mv ${HOME}/.vimrc ${HOME}/.vimrc.old"
 fi
 echo "  ln -sf ${ROOT} ${HOME}/.vim"
-echo "  ln -sf ${ROOT}/vimrc ${HOME}/.vimrc"
+# echo "  ln -sf ${ROOT}/vimrc ${HOME}/.vimrc"
 echo ""
-echo "If you want to use plugins, Please run"
-echo ""
+# echo "If you want to use plugins, Please run"
+# echo ""
 echo "  ln -sf ${ROOT}/vimrc.pathogen ${HOME}/.vimrc"
-echo "  cd ${ROOT} && ./install_plugin"
+# echo "  cd ${ROOT} && ./install_plugin"
 echo ""
 
 

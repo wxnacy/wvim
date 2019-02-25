@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+PWD=`pwd`
+
+rm ${HOME}/.vim
+rm ${HOME}/.vimrc
+
+
+ln -sf /Users/wxnacy/WebstormProjects/wxnacy.github.io/shells/vim ${HOME}/.vim
+ln -sf /Users/wxnacy/.wxnacy/shells/vim/vimrc.pathogen ${HOME}/.vimrc
