@@ -262,11 +262,11 @@ autocmd FileType javascript set tabstop=2 shiftwidth=2 expandtab ai
 autocmd FileType json set tabstop=4 shiftwidth=4 expandtab ai
 "
 
-" function! Tab_Or_Complete()
-  " if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
-    " return "\<C-N>"
-  " else
-    " return "\<Tab>"
-  " endif
-" endfunction
-" :inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
+function! Tab_Or_Complete()
+  if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
+    return "\<C-N>"
+  else
+    return "\<Tab>"
+  endif
+endfunction
+inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>

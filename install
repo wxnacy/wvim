@@ -3,7 +3,7 @@
 ROOT=${HOME}/.wvim
 NAME=$1
 
-[ -d ${ROOT} ] || git clone --init --recursive https://github.com/wxnacy/wvim ${ROOT}
+[ -d ${ROOT} ] || git clone --recursive https://github.com/wxnacy/wvim ${ROOT}
 
 OS=`curl -L https://raw.githubusercontent.com/wxnacy/wshell/master/bin/base/os | bash`
 OSS=(${OS})
