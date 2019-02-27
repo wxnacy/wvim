@@ -165,3 +165,35 @@ nnoremap <leader>H :GundoToggle<CR>
 if has('python3')
     let g:gundo_prefer_python3 = 1
 endif
+
+"===============================
+" supertab 配置
+" https://github.com/ervandew/supertab
+"===============================
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
+
+"===============================
+" jedi-vim 配置
+" https://github.com/davidhalter/jedi-vim
+"===============================
+if filereadable(expand("$HOME/.vim/bundle/jedi-vim/Makefile"))    " 判断文件是否存在"
+    " let g:jedi#popup_on_dot = 0                 " 禁用点后自动补全"
+    let g:jedi#popup_select_first = 0           " 禁用自动补全第一个"
+    let g:jedi#rename_command = "<leader>R"     " 修改改名的快捷键"
+    let g:jedi#show_call_signatures = ""        " 禁用实时显示不全的函数列表，不会卡死"
+    let g:jedi#use_splits_not_buffers = "right" " 跳转源代码时，打开页面的位置，默认为当前页面"
+
+    let g:pymode_rope = 0                       " 禁用 python-mode 的绳索模式"
+    " let g:jedi#completions_enabled = 0        " 是否启用补全"
+endif
+
+" fun! GetSnipsInCurrentScope()
+" let snips = {}
+" for scope in [bufnr('%')] + split(&ft, '\.') + ['_']
+    " call extend(snips, get(s:snippets, scope, {}), 'keep')
+    " call extend(snips, get(s:multi_snips, scope, {}), 'keep')
+" endfor
+" return snips
+" endf
+" let g:acp_behaviorSnipmateLength=1

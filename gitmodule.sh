@@ -17,7 +17,8 @@ git submodule add --force https://github.com/docunext/closetag.vim             b
 git submodule add --force https://github.com/terryma/vim-multiple-cursors      bundle/vim-multiple-cursors    # 多光标操作
 git submodule add --force https://github.com/mileszs/ack.vim.git               bundle/ack.vim                 # 全局搜索插件
 git submodule add --force https://github.com/sjl/gundo.vim                     bundle/gundo.vim               # 查看文件编辑历史记录
-git submodule add --force https://github.com/Valloric/YouCompleteMe            bundle/YouCompleteMe           # 代码补全
+git submodule add --force https://github.com/ervandew/supertab                 bundle/supertab                # tab 进行补全
+# git submodule add --force https://github.com/Valloric/YouCompleteMe            bundle/YouCompleteMe           # 代码补全
 
 # git submodule add --force https://github.com/tpope/vim-pathogen.git            bundle/vim-pathogen            # 更好的插件管理
 # git submodule add --force https://github.com/altercation/vim-colors-solarized  bundle/vim-colors-solarized    # 配色方案

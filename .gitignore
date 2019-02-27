@@ -145,3 +145,9 @@ var/
 *.egg
 
 # for public end
+
+
+# for plugin begin
+bundle/jedi-vim/
+bundle/YouCompleteMe/
+# for plugin end

@@ -107,6 +107,7 @@ set mouse=a       				"启用鼠标"
 set foldlevelstart=99           "默认不折叠"
 set foldmethod=indent           "按照缩紧折叠"
 
+
 " Mapping ================== {{{
 " 快速打开 vimrc文件
 nnoremap <Leader>vw :vsp ~/.vim/vimrc<CR>
@@ -141,7 +142,7 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>wq :wq<CR>
 " 快速返回常用模式
 inoremap jk <esc>
-vnoremap jk <esc>
+vnoremap JK <esc>
 " 修改撤销快捷键
 nnoremap U u
 nnoremap u <nop>
@@ -232,11 +233,11 @@ nnoremap vig vg_
 
 " Operator Mapping {{{
 
-onoremap in( :<c-u>normal! f(vi(<cr>
-onoremap in[ :<c-u>normal! f[vi[<cr>
-onoremap in{ :<c-u>normal! f{vi{<cr>
-onoremap in" :<c-u>normal! f"vi"<cr>
-onoremap in' :<c-u>normal! f'vi'<cr>
+" onoremap in( :<c-u>normal! f(vi(<cr>
+" onoremap in[ :<c-u>normal! f[vi[<cr>
+" onoremap in{ :<c-u>normal! f{vi{<cr>
+" onoremap in" :<c-u>normal! f"vi"<cr>
+" onoremap in' :<c-u>normal! f'vi'<cr>
 
 " 选中当前到结尾非空字符
 onoremap ig :<c-u>normal! vg_<cr>
@@ -262,11 +263,14 @@ autocmd FileType javascript set tabstop=2 shiftwidth=2 expandtab ai
 autocmd FileType json set tabstop=4 shiftwidth=4 expandtab ai
 "
 
-function! Tab_Or_Complete()
-  if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
-    return "\<C-N>"
-  else
-    return "\<Tab>"
-  endif
-endfunction
-inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
+" function! Tab_Or_Complete()
+  " if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
+    " return "\<C-N>"
+  " else
+    " return "\<Tab>"
+  " endif
+" endfunction
+" inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
+
+
+let g:wvim_plugin_home = expand("$HOME/.vim/bundle")

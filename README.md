@@ -24,3 +24,10 @@ $ source ~/.bash_profile
 ```
 
 然后使用 `<c-x><c-o>` 即可完成自动补全
+
+### Python
+
+```bash
+$ git clone --recursive https://github.com/davidhalter/jedi-vim.git ~/.vim/bundle/jedi-vim
+$ pip install jedi
+```
