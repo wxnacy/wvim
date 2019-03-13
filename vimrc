@@ -231,6 +231,13 @@ nnoremap vig vg_
 
 " }}}
 
+" Windows {{{
+nnoremap <c-w>> <c-w>30>
+nnoremap <c-w>< <c-w>30<
+nnoremap <c-w>- <c-w>30-
+nnoremap <c-w>+ <c-w>30+
+" }}}
+
 " Operator Mapping {{{
 
 " onoremap in( :<c-u>normal! f(vi(<cr>
@@ -261,6 +268,7 @@ autocmd FileType vim setlocal foldmethod=marker
 autocmd FileType html set tabstop=2 shiftwidth=2 expandtab ai
 autocmd FileType javascript set tabstop=2 shiftwidth=2 expandtab ai
 autocmd FileType json set tabstop=4 shiftwidth=4 expandtab ai
+autocmd FileType go set tabstop=4 shiftwidth=4 expandtab ai
 "
 
 " function! Tab_Or_Complete()

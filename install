@@ -13,21 +13,24 @@ PKG=${OSS[2]}
 
 sudo $PKG install -y vim
 
-# case $SYS in
-    # debian|ubuntu|devuan)
-        # # sudo apt update -y
-        # # sudo apt -y install vim-gnome
-        # ;;
-    # centos|fedora|rhel|amzn)
-        # # sudo yum -y install vim
-        # ;;
-    # Darwin)
-        # brew install vim
-        # ;;
-    # *)
-        # echo '暂时不支持该系统'
-        # ;;
-# esac
+case $SYS in
+    debian|ubuntu|devuan)
+        sudo apt update -y
+        sudo apt install -y ack-grep
+        # sudo apt -y install vim-gnome
+        ;;
+    centos|fedora|rhel|amzn)
+        sudo yum update -y
+        sudo yum -y install epel-release ack
+        ;;
+    Darwin)
+        brew update
+        brew install vim
+        ;;
+    *)
+        echo '暂时不支持该系统'
+        ;;
+esac
 
 
 echo ''
