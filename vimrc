@@ -86,9 +86,9 @@ set tabstop=4                   "键入<tab>的步长
 set softtabstop=4                " insert mode tab and backspace use 4 spaces
 
 " set mark column color
-hi! link SignColumn   LineNr
-hi! link ShowMarksHLl DiffAdd
-hi! link ShowMarksHLu DiffChange
+" hi! link SignColumn   LineNr
+" hi! link ShowMarksHLl DiffAdd
+" hi! link ShowMarksHLu DiffChange
 
 " status line
 " set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
@@ -138,6 +138,9 @@ nnoremap <Leader>da ggdG
 nnoremap <Leader>q :q<CR>
 " 快速保存
 nnoremap <Leader>w :w<CR>
+" 没有保存权限时，使用 sudo 身份保存
+nnoremap <Leader>W :w !sudo tee % > /dev/null<cr>
+" command W w !sudo tee % > /dev/null
 " 快速保存推出
 nnoremap <Leader>wq :wq<CR>
 " 快速返回常用模式
@@ -269,6 +272,7 @@ autocmd FileType html set tabstop=2 shiftwidth=2 expandtab ai
 autocmd FileType javascript set tabstop=2 shiftwidth=2 expandtab ai
 autocmd FileType json set tabstop=4 shiftwidth=4 expandtab ai
 autocmd FileType go set tabstop=4 shiftwidth=4 expandtab ai
+au BufNewFile,BufRead *.me set filetype=me
 "
 
 " function! Tab_Or_Complete()

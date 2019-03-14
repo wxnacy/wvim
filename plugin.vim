@@ -13,10 +13,10 @@ let NERDTreeShowLineNumbers=1   " 是否显示菜单行号
 " let NERDTreeAutoCenter=1
 let NERDTreeShowHidden=1        " 是否显示隐藏文件
 " let NERDTreeWinSize=31          " 设置宽度
-let NERDTreeIgnore=['\.pyc','\~$','\.git$','\.DS_Store','__pycache__','\.idea','\.cache','.python-version']  " 忽略文件显示
+let NERDTreeIgnore=['\.pyc','\~$','\.git$','\.DS_Store','__pycache__','\.idea','\.cache','.python-version', '.swp', '.swo']  " 忽略文件显示
 let NERDTreeShowBookmarks=1     " 显示书签列表
 let NERDTreeHighlightCursorline = 1 " 高亮当前行
-" let NERDTreeQuitOnOpen = 1      " 从菜单打开文件后关闭菜单
+let NERDTreeQuitOnOpen = 1      " 从菜单打开文件后关闭菜单
 let NERDTreeWinPos ="left"      " 设置菜单在左侧打开，默认值
 
 "===============================
