@@ -12,7 +12,20 @@ iabbrev <buffer> fh #!/usr/bin/env python<cr>
                     \(wxnacy@gmail.com)<cr>
                     \# Description:<cr>
                     \<cr>
-autocmd BufNewFile *.py exec ":call NewPyFile()"
+iabbrev <buffer> unittestmain   import unittest<cr><cr>
+                                \class TestMain(unittest.TestCase):<cr><cr>
+                                \def setUp(self):<cr>
+                                \'''before each test function'''<cr>
+                                \pass<cr><cr>
+                                \def tearDown(self):<cr>
+                                \'''after each test function'''<cr>
+                                \pass<cr><cr>
+                                \def test_(self):<cr>
+                                \self.assertEqual(1, 1)<cr><cr><BS><BS>
+                                \if __name__ == "__main__":<cr>
+                                \unittest.main()<esc>kkkkF(i
+
+" autocmd BufNewFile *.py exec ":call NewPyFile()"
 function! NewPyFile()
     if &filetype == 'python'
         call setline(1, "\#!/usr/bin/env python")

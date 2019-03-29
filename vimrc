@@ -272,6 +272,7 @@ autocmd FileType html set tabstop=2 shiftwidth=2 expandtab ai
 autocmd FileType javascript set tabstop=2 shiftwidth=2 expandtab ai
 autocmd FileType json set tabstop=4 shiftwidth=4 expandtab ai
 autocmd FileType go set tabstop=4 shiftwidth=4 expandtab ai
+autocmd BufNewFile *.py exec ":call NewPyFile()"
 au BufNewFile,BufRead *.me set filetype=me
 "
 

@@ -353,7 +353,7 @@ hi def link pythonConditional	Special
 hi def link pythonRepeat		Special
 hi def link pythonOperator		Special
 hi def link pythonComment		Comment
-hi def link pythonBuiltinVar		Type
+hi def link pythonBuiltinVar		Statement
 " }}}
 
 
