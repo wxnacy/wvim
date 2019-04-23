@@ -267,13 +267,17 @@ iabbrev hw Hello World
   " set term=screen-256color
 " endif
 
+au BufNewFile,BufRead *zprofile set filetype=sh
+au BufNewFile,BufRead *bash_aliases set filetype=sh
 autocmd FileType vim setlocal foldmethod=marker
 autocmd FileType html set tabstop=2 shiftwidth=2 expandtab ai
 autocmd FileType javascript set tabstop=2 shiftwidth=2 expandtab ai
 autocmd FileType json set tabstop=4 shiftwidth=4 expandtab ai
 autocmd FileType go set tabstop=4 shiftwidth=4 expandtab ai
+" autocmd FileType python exec ":call NewPyFile()"
 autocmd BufNewFile *.py exec ":call NewPyFile()"
 au BufNewFile,BufRead *.me set filetype=me
+" au BufNewFile,BufRead *bashrc set filetype=
 "
 
 " function! Tab_Or_Complete()

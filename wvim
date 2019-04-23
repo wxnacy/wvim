@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-VER=1.0.3
+VER=1.0.4
 echo $VER
