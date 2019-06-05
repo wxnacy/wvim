@@ -188,6 +188,20 @@ if filereadable(expand("$HOME/.vim/bundle/jedi-vim/Makefile"))    " 判断文件
     " let g:jedi#completions_enabled = 0        " 是否启用补全"
 endif
 
+"===============================
+" dart-vim-plugin 配置
+" https://github.com/dart-lang/dart-vim-plugin
+"===============================
+if filereadable(expand("$HOME/.vim/bundle/dart-vim-plugin/README.md"))    " 判断文件是否存在"
+" Enable HTML syntax highlighting inside Dart strings with let dart_html_in_string=v:true (default false).
+" Disable highlighting of core library classes with let dart_corelib_highlight=v:false (default true).
+" Enable Dart style guide syntax (like 2-space indentation) with let dart_style_guide = 2
+" Enable DartFmt execution on buffer save with let dart_format_on_save = 1
+    let dart_html_in_string=v:true
+    let dart_style_guide = 2
+    let dart_format_on_save = 1
+endif
+
 " fun! GetSnipsInCurrentScope()
 " let snips = {}
 " for scope in [bufnr('%')] + split(&ft, '\.') + ['_']
