@@ -150,5 +150,6 @@ var/
 # for plugin begin
 bundle/jedi-vim/
 bundle/YouCompleteMe/
+bundle/vim-javacomplete2/
 *.zip
 # for plugin end

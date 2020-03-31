@@ -18,6 +18,7 @@ git submodule add --force https://github.com/terryma/vim-multiple-cursors      b
 git submodule add --force https://github.com/mileszs/ack.vim.git               bundle/ack.vim                 # 全局搜索插件
 git submodule add --force https://github.com/sjl/gundo.vim                     bundle/gundo.vim               # 查看文件编辑历史记录
 git submodule add --force https://github.com/ervandew/supertab                 bundle/supertab                # tab 进行补全
+git submodule add --force https://github.com/scrooloose/syntastic              bundle/syntastic               # 语法检查
 # git submodule add --force https://github.com/Valloric/YouCompleteMe            bundle/YouCompleteMe           # 代码补全
 
 # git submodule add --force https://github.com/tpope/vim-pathogen.git            bundle/vim-pathogen            # 更好的插件管理
@@ -28,7 +29,6 @@ git submodule add --force https://github.com/ervandew/supertab                 b
 # git submodule add --force https://github.com/tpope/vim-repeat                  bundle/vim-repeat              # 重复一个插件的操作
 # git submodule add --force https://github.com/terryma/vim-expand-region         bundle/vim-expand-region       # 区域选择
 # git submodule add --force https://github.com/vim-scripts/matchit.zip           bundle/matchit.zip             # 成对标签跳转,需要光标放在div等文字上
-# git submodule add --force https://github.com/scrooloose/syntastic              bundle/syntastic               # 语法检查
 # git submodule add --force https://github.com/dkprice/vim-easygrep.git          bundle/vim-easygrep            # 全局搜索插件
 # git submodule add --force https://github.com/dyng/ctrlsf.vim.git               bundle/ctrlsf.vim              # 搜索增强
 # git submodule add --force https://github.com/artur-shaik/vim-javacomplete2.git bundle/vim-javacomplete2       # java                 代码不全
