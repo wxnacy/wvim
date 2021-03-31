@@ -1,4 +1,14 @@
 "===============================
+" Name: wxnacy's Vim setting
+" Author: wxnacy <wxnacy@gmail.com>
+" URL: https://wxnacy.com
+" Created: 2017-08-27
+" Modified: 2021-03-31
+" Description: 插件配置
+"===============================
+
+
+"===============================
 " vim-colors-solarized 配置
 "===============================
 colorscheme solarized
@@ -185,6 +195,7 @@ let g:syntastic_check_on_wq=1
 let g:syntastic_enable_highlighting=1
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_stl_format = '[%E{E:%fe #%e}%B{, }%W{W:%fw #%w}]'
+" pyflakes mypy pylint
 let g:syntastic_python_checkers=['pyflakes'] " 使用pyflakes,速度比pylint快
 let g:syntastic_javascript_checkers = ['jsl', 'jshint']
 let g:syntastic_html_checkers=['tidy', 'jshint']
@@ -209,35 +220,6 @@ nnoremap <Leader>ec :SyntasticCheck<cr>
 nnoremap <Leader>en :lnext<cr>
 nnoremap <Leader>ep :lprevious<cr>
 
-"===============================
-" jedi-vim 配置
-" https://github.com/davidhalter/jedi-vim
-"===============================
-if filereadable(expand("$HOME/.vim/bundle/jedi-vim/Makefile"))    " 判断文件是否存在"
-    " let g:jedi#popup_on_dot = 0                 " 禁用点后自动补全"
-    let g:jedi#popup_select_first = 0           " 禁用自动补全第一个"
-    let g:jedi#rename_command = "<leader>R"     " 修改改名的快捷键"
-    let g:jedi#show_call_signatures = ""        " 禁用实时显示不全的函数列表，不会卡死"
-    let g:jedi#use_splits_not_buffers = "right" " 跳转源代码时，打开页面的位置，默认为当前页面"
-
-    let g:pymode_rope = 0                       " 禁用 python-mode 的绳索模式"
-    " let g:jedi#completions_enabled = 0        " 是否启用补全"
-endif
-
-"===============================
-" dart-vim-plugin 配置
-" https://github.com/dart-lang/dart-vim-plugin
-"===============================
-if filereadable(expand("$HOME/.vim/bundle/dart-vim-plugin/README.md"))    " 判断文件是否存在"
-" Enable HTML syntax highlighting inside Dart strings with let dart_html_in_string=v:true (default false).
-" Disable highlighting of core library classes with let dart_corelib_highlight=v:false (default true).
-" Enable Dart style guide syntax (like 2-space indentation) with let dart_style_guide = 2
-" Enable DartFmt execution on buffer save with let dart_format_on_save = 1
-    let dart_html_in_string=v:true
-    let dart_style_guide = 2
-    let dart_format_on_save = 1
-endif
-
 " fun! GetSnipsInCurrentScope()
 " let snips = {}
 " for scope in [bufnr('%')] + split(&ft, '\.') + ['_']
@@ -247,3 +229,14 @@ endif
 " return snips
 " endf
 " let g:acp_behaviorSnipmateLength=1
+
+
+"===============================
+" vim-fugitive 配置
+" https://github.com/tpope/vim-fugitive
+"===============================
+nnoremap <leader>gb :G blame<CR>
+nnoremap <leader>gst :G status<CR>
+nnoremap <leader>gd :G diff<CR>
+nnoremap <leader>gdc :G diff %<CR>
+

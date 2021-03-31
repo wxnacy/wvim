@@ -1,5 +1,5 @@
 call pathogen#infect()
 so ~/.vim/vimrc
-so ~/.vim/complete.vim
-so ~/.vim/plugin.vim
+so ~/.vim/vimrcs/plugin.vim
+so ~/.vim/vimrcs/plugin-options.vim
 
