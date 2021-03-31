@@ -107,165 +107,19 @@ set mouse=a       				"启用鼠标"
 set foldlevelstart=99           "默认不折叠"
 set foldmethod=indent           "按照缩紧折叠"
 
-
-" Mapping ================== {{{
-" 快速打开 vimrc文件
-nnoremap <Leader>vw :vsp ~/.vim/vimrc<CR>
-nnoremap <Leader>vs :source $MYVIMRC<CR>:nohls<CR>
-nnoremap <Leader>tw :vsp ~/.tmux.conf<CR>
-nnoremap <Leader>mw :vsp ~/VimProjects/vim-mysql/plugin/mysql.vim<CR>
-nnoremap <Leader>ms :source ~/VimProjects/vim-mysql/plugin/mysql.vim<CR>
-nnoremap <Leader>vj :vsp ~/VimProjects/vim-java/plugin/vimjava.vim<CR>
-nnoremap <Leader>sj :source ~/VimProjects/vim-java/plugin/vimjava.vim<CR>
-nnoremap <Leader>jsw :vsp ~/.vim/syntax/javascript.vim<CR>
-nnoremap <Leader>pyw :vsp ~/.vim/syntax/python.vim<CR>
-nnoremap <Leader>sshw :vsp ~/.ssh/config<CR>
-nnoremap <Leader>zshw :vsp ~/.zshrc<CR>
-nnoremap <Leader>vsp :vsp ~/.vim/syntax/python.vim<CR>
-nnoremap <Leader>vsmd :vsp ~/.vim/syntax/markdown.vim<CR>
-nnoremap <Leader>vsjs :vsp ~/.vim/syntax/javascript.vim<CR>
-nnoremap <Leader>vsj :vsp ~/.vim/syntax/java.vim<CR>
-nnoremap <Leader>vn :vsp /usr/local/etc/openresty/nginx.conf<CR>
-" nnoremap <Leader>lw :vsp ~/VimProjects/vim-linux/plugin/linux.vim<CR>
-" nnoremap <Leader>ls :source ~/VimProjects/vim-linux/plugin/linux.vim<CR>
-" 重新加载文件
-" nnoremap <Leader>ar :e<CR>
-" 选中全部
-nnoremap <Leader>sa ggVG
-" 删除全部
-nnoremap <Leader>da ggdG
-" 快速推出
-nnoremap <Leader>q :q<CR>
-" 快速保存
-nnoremap <Leader>w :w<CR>
-" 没有保存权限时，使用 sudo 身份保存
-nnoremap <Leader>W :w !sudo tee % > /dev/null<cr>
-" command W w !sudo tee % > /dev/null
-" 快速保存推出
-nnoremap <Leader>wq :wq<CR>
-" 快速返回常用模式
-inoremap jk <esc>
-vnoremap JK <esc>
-" 修改撤销快捷键
-nnoremap U u
-nnoremap u <nop>
-" 快速查看 messages
-nnoremap <Leader>vm :messages<CR>
-" 使用 <C-hjkl> 进行移动窗口，不必输入 w
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-" 去掉高亮
-nnoremap <Leader>nh :nohls<CR>
-" 模拟IDE<tab>键
-" 单行的缩紧退回和选中模式下的缩进退回
-nnoremap <tab> V>
-nnoremap <S-tab> V<
-vnoremap <tab> >gv
-vnoremap <S-tab> <gv
-" 上下移动文本
-nnoremap <Leader>k ddkP
-nnoremap <Leader>j ddp
-vnoremap <Leader>k dkP
-vnoremap <Leader>j dp
-" 文本超出屏幕时左右移动
-nnoremap <Leader>l 79l
-nnoremap <Leader>h 79h
-
-" 插入模式快速移动到行首和行尾
-" nnoremap <C-a> I
-nnoremap <C-e> A
-inoremap <C-a> <esc>I
-inoremap <C-e> <esc>A
-cnoremap <C-a> <Home>
-cnoremap <C-e> <End>
-" 插入模式快速左右移动一格
-inoremap <Leader>l <esc>la
-inoremap <Leader>h <esc>i
-inoremap <Leader>j <esc>ja
-inoremap <Leader>k <esc>ka
-" 插入模式右删除一格
-inoremap <C-l> <esc>lxi
-
-" 复制和系统剪贴板交互
-" set clipboard = unname
-nnoremap <C-y> "+Y
-vnoremap <C-y> "+y
-" 黏贴系统剪切版的内容
-nnoremap <C-p> "+p
-inoremap <C-p> <esc>"+pi
-" 复制黏贴
-nnoremap yp yyp
-
-" 快速选中当前行有效文字区域
-nnoremap vv I<esc>lvg_
-
-" 快速添加成对标签
-" nnoremap <Leader>" eb<esc>i"<esc>ea"<esc>
-" nnoremap <Leader>" viw<esc>a"<esc>bi"<esc>lel
-nnoremap <Leader>" viw<esc>bi"<esc>ea"<esc>
-nnoremap <Leader>' viw<esc>bi'<esc>ea'<esc>
-nnoremap <Leader>` viw<esc>bi`<esc>ea`<esc>
-nnoremap <Leader>[ viw<esc>bi[<esc>ea]<esc>
-nnoremap <Leader>{ viw<esc>bi{<esc>ea}<esc>
-nnoremap <Leader>( viw<esc>bi(<esc>ea)<esc>
-vnoremap <Leader>" di""<esc>hp
-vnoremap <Leader>' di''<esc>hp
-vnoremap <Leader>` di``<esc>hp
-vnoremap <Leader>( di()<esc>hp
-vnoremap <Leader>{ di{}<esc>hp
-vnoremap <Leader>[ di[]<esc>hp
-nnoremap <Leader><Leader>" <s-i>"<esc><s-a>"<esc>
-nnoremap <Leader><Leader>' <s-i>'<esc><s-a>'<esc>
-nnoremap <Leader><Leader>` <s-i>`<esc><s-a>`<esc>
-nnoremap <Leader><Leader>[ <s-i>[<esc><s-a>]<esc>
-nnoremap <Leader><Leader>{ <s-i>{<esc><s-a>}<esc>
-nnoremap <Leader><Leader>( <s-i>(<esc><s-a>)<esc>
-
-" 快速在行尾巴插入分号;
-nnoremap <Leader>, mzA;<esc>`z
-inoremap <Leader>, <esc>mzA;<esc>`za
-nnoremap <Leader><Leader><space> viw<esc>a<space><esc>bi<space><esc>
-vnoremap <Leader><Leader><space> di<space><space><esc>hp
-
-" 选中到行尾
-nnoremap vig vg_
-
-" }}}
-
-" Windows {{{
-nnoremap <c-w>> <c-w>30>
-nnoremap <c-w>< <c-w>30<
-nnoremap <c-w>- <c-w>30-
-nnoremap <c-w>+ <c-w>30+
-" }}}
-
-" Operator Mapping {{{
-
-" onoremap in( :<c-u>normal! f(vi(<cr>
-" onoremap in[ :<c-u>normal! f[vi[<cr>
-" onoremap in{ :<c-u>normal! f{vi{<cr>
-" onoremap in" :<c-u>normal! f"vi"<cr>
-" onoremap in' :<c-u>normal! f'vi'<cr>
-
-" 选中当前到结尾非空字符
-onoremap ig :<c-u>normal! vg_<cr>
-
-" }}}
-
-" Abbreviations {{{
-
-iabbrev eg wxnacy@gmail.com
-iabbrev eq 371032668@qq.com
-iabbrev hw Hello World
-
-" }}}
-
-
 " if exists('$TMUX')
   " set term=screen-256color
 " endif
+
+" 加载单独模块
+so ~/.vim/vimrcs/constants.vim
+so ~/.vim/vimrcs/mapping.vim
+so ~/.vim/vimrcs/abbreviations.vim
+so ~/.vim/vimrcs/operator-mapping.vim
+" 判断并加载本地常量文件
+if filereadable(expand("$HOME/.vim/local-constants.vim"))
+  so ~/.vim/local-constants.vim
+endif
 
 au BufNewFile,BufRead *zprofile set filetype=sh
 au BufNewFile,BufRead *bash_aliases set filetype=sh
@@ -275,18 +129,6 @@ autocmd FileType json set tabstop=4 shiftwidth=4 expandtab ai
 autocmd FileType go set tabstop=4 shiftwidth=4 expandtab ai
 " autocmd FileType python exec ":call NewPyFile()"
 autocmd BufNewFile *.py exec ":call NewPyFile()"
+autocmd BufNewFile *.java exec ":call NewJavaFile()"
 au BufNewFile,BufRead *.me set filetype=me
-" au BufNewFile,BufRead *bashrc set filetype=
-"
 
-" function! Tab_Or_Complete()
-  " if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
-    " return "\<C-N>"
-  " else
-    " return "\<Tab>"
-  " endif
-" endfunction
-" inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
-
-
-let g:wvim_plugin_home = expand("$HOME/.vim/bundle")
