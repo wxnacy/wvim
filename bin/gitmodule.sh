@@ -19,6 +19,7 @@ git submodule add --force https://github.com/mileszs/ack.vim.git               b
 git submodule add --force https://github.com/sjl/gundo.vim                     bundle/gundo.vim               # 查看文件编辑历史记录
 git submodule add --force https://github.com/ervandew/supertab                 bundle/supertab                # tab 进行补全
 git submodule add --force https://github.com/scrooloose/syntastic              bundle/syntastic               # 语法检查
+git submodule add --force https://github.com/tpope/vim-fugitive                bundle/vim-fugitive               # github 插件
 # git submodule add --force https://github.com/Valloric/YouCompleteMe            bundle/YouCompleteMe           # 代码补全
 
 # git submodule add --force https://github.com/tpope/vim-pathogen.git            bundle/vim-pathogen            # 更好的插件管理
