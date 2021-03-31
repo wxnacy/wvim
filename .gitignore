@@ -127,6 +127,7 @@ target/
 *.out
 .serverless/
 */.serverless/
+tmp/*
 
 # Distribution / packaging
 env/
