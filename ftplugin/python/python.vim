@@ -10,8 +10,8 @@ iabbrev <buffer> fh #!/usr/bin/env python<cr>
                     \# -*- coding:utf-8 -*-<cr>
                     \# Author: wxnacy
                     \(wxnacy@gmail.com)<cr>
-                    \# Description:<cr>
-                    \<cr>
+                    \"""<cr>
+
 iabbrev <buffer> utmain   import unittest<cr><cr>
                                 \class TestMain(unittest.TestCase):<cr><cr>
                                 \def setUp(self):<cr>
@@ -34,8 +34,10 @@ function! NewPyFile()
     if &filetype == 'python'
         call setline(1, "\#!/usr/bin/env python")
         call append(1, "\# -*- coding:utf-8 -*-")
-        call append(2, "\# Author: wxnacy(wxnacy@gmail.com)")
-        call append(3, "\# Description: ")
+        call append(2, "\# Author: " . g:wvim_author)
+        call append(3, '"""')
+        call append(4, '')
+        call append(5, '"""')
     endif
 
     normal G
