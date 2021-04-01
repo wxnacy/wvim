@@ -19,6 +19,8 @@ nnoremap <Leader>vsp :vsp ~/.vim/syntax/python.vim<CR>
 nnoremap <Leader>vsmd :vsp ~/.vim/syntax/markdown.vim<CR>
 nnoremap <Leader>vsjs :vsp ~/.vim/syntax/javascript.vim<CR>
 nnoremap <Leader>vsj :vsp ~/.vim/syntax/java.vim<CR>
+nnoremap <Leader>br :vsp ~/.bashrc<CR>
+nnoremap <Leader>bp :vsp ~/.bash_profile<CR>
 " 快速查看 messages
 nnoremap <Leader>vm :messages<CR>
 " 去掉高亮
