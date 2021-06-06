@@ -15,7 +15,9 @@ $ curl -L https://raw.githubusercontent.com/wxnacy/wvim/master/install | bash
 ## 代码补全
 
 万物不全基于 YouCompleteMe
+
 现阶段作为 Mac 系统下新系统适配最好，且最高大全的补全插件就是它了。
+
 [Vim 插件 YouCompleteMe 代码自动补全](https://wxnacy.com/2017/09/22/vim-plugin-youcompleteme/)
 
 ### Go
