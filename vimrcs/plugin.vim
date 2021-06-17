@@ -12,6 +12,7 @@
 " vim-colors-solarized 配置
 "===============================
 colorscheme solarized
+let g:solarized_termcolors=256
 
 "===============================
 " NERDTree 配置
