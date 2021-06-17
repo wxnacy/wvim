@@ -26,6 +26,7 @@ case $SYS in
     Darwin)
         brew update
         brew install vim
+        brew install ack
         ;;
     *)
         echo '暂时不支持该系统'
