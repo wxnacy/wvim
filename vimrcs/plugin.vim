@@ -240,3 +240,20 @@ nnoremap <leader>gst :G status<CR>
 nnoremap <leader>gd :G diff<CR>
 nnoremap <leader>gdc :G diff %<CR>
 
+"===============================
+" undotree 配置
+" https://github.com/mbbill/undotree.git
+"===============================
+nnoremap <leader>h :UndotreeToggle<CR>
+if has("persistent_undo")
+   let target_path = expand('~/Documents/Projects/wxnacy/.undodir')
+
+    " create the directory and any parent directories
+    " if the location does not exist.
+    if !isdirectory(target_path)
+        call mkdir(target_path, "p", 0700)
+    endif
+
+    let &undodir=target_path
+    set undofile
+endif
