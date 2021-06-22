@@ -237,9 +237,14 @@ nnoremap <Leader>ep :lprevious<cr>
 " https://github.com/tpope/vim-fugitive
 "===============================
 nnoremap <leader>gb :G blame<CR>
-nnoremap <leader>gst :G status<CR>
+" nnoremap <leader>gst :G status<CR>
+nnoremap <leader>gs :G<CR>
 nnoremap <leader>gd :G diff<CR>
-nnoremap <leader>gdc :G diff %<CR>
+nnoremap <leader>gds :Gdiffsplit<CR>
+nnoremap <leader>gdv :Gvdiffsplit<CR>
+nnoremap <leader>gc :G commit<CR>
+nnoremap <leader>gr :Gread<CR>
+" nnoremap <leader>gdc :G diff %<CR>
 
 "===============================
 " undotree 配置
