@@ -244,6 +244,9 @@ nnoremap <leader>gds :Gdiffsplit<CR>
 nnoremap <leader>gdv :Gvdiffsplit<CR>
 nnoremap <leader>gc :G commit<CR>
 nnoremap <leader>gr :Gread<CR>
+
+" set statusline+=%{FugitiveStatusline()}
+" set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 " nnoremap <leader>gdc :G diff %<CR>
 
 "===============================
