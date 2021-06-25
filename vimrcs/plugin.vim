@@ -13,6 +13,8 @@
 "===============================
 colorscheme solarized
 let g:solarized_termcolors=256
+" set background=light       		"配色主题的色系,注意，这不是什么背景色！dark 是暗色系，light 是亮色系。
+
 
 "===============================
 " NERDTree 配置
