@@ -13,6 +13,8 @@
 "===============================
 colorscheme solarized
 let g:solarized_termcolors=256
+" set background=light       		"配色主题的色系,注意，这不是什么背景色！dark 是暗色系，light 是亮色系。
+
 
 "===============================
 " NERDTree 配置
@@ -238,6 +240,12 @@ nnoremap <Leader>ep :lprevious<cr>
 "===============================
 nnoremap <leader>gb :G blame<CR>
 " nnoremap <leader>gst :G status<CR>
+" http://vimcasts.org/episodes/fugitive-vim-working-with-the-git-index/
+" gs 状态下
+" - add/reset Unpush - git push
+" = 展示 diff
+" cc commit 信息
+" <enter> 打开文件
 nnoremap <leader>gs :G<CR>
 nnoremap <leader>gd :G diff<CR>
 nnoremap <leader>gds :Gdiffsplit<CR>
