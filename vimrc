@@ -116,6 +116,7 @@ so ~/.vim/vimrcs/constants.vim
 so ~/.vim/vimrcs/mapping.vim
 so ~/.vim/vimrcs/abbreviations.vim
 so ~/.vim/vimrcs/operator-mapping.vim
+so ~/.vim/vimrcs/functions.vim
 " 判断并加载本地常量文件
 if filereadable(expand("$HOME/.vim/local-constants.vim"))
   so ~/.vim/local-constants.vim
