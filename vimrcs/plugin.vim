@@ -3,7 +3,7 @@
 " Author: wxnacy <wxnacy@gmail.com>
 " URL: https://wxnacy.com
 " Created: 2017-08-27
-" Modified: 2021-03-31
+" Modified: 2021-11-28
 " Description: 插件配置
 "===============================
 
@@ -41,7 +41,8 @@ let g:nerdtree_tabs_open_on_console_startup=1
 "===============================
 " NERDTree-git-plugin 配置
 "===============================
-let g:NERDTreeIndicatorMapCustom = {
+" let g:NERDTreeIndicatorMapCustom = {  已过期
+let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
     \ "Untracked" : "✭",
@@ -53,7 +54,10 @@ let g:NERDTreeIndicatorMapCustom = {
     \ 'Ignored'   : '☒',
     \ "Unknown"   : "?"
     \ }
-let g:NERDTreeShowIgnoredStatus = 1
+" let g:NERDTreeShowIgnoredStatus = 1   已过期
+" 是否展示过滤状态 default: 0
+let g:NERDTreeGitStatusShowIgnored = 1
+let g:NERDTreeUseSimpleIndicator = 1
 
 
 "===============================
