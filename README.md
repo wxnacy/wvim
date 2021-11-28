@@ -2,6 +2,10 @@
 
 `wvim` 可以快速集成 vim 开发环境。
 
+![wvim-preview](docs/images/wvim-preview.png)
+
+<!-- TODO 安装字体 -->
+
 ## 安装
 
 执行
