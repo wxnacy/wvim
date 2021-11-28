@@ -107,29 +107,29 @@ map <Leader><Leader>. <Plug>(easymotion-repeat)
 "===============================
 " ctrlp 配置
 "===============================
-let g:ctrlp_map = '<leader>p'
-let g:ctrlp_cmd = 'CtrlP'
-map <leader>p :CtrlP<CR>
-map <leader>f :CtrlPMRU<CR>
-let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
-    \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc)$',
-    \ }
-let g:ctrlp_working_path_mode=0
-let g:ctrlp_match_window_bottom=1
-let g:ctrlp_max_height=15
-let g:ctrlp_match_window_reversed=0
-let g:ctrlp_mruf_max=500
-let g:ctrlp_follow_symlinks=1
+" let g:ctrlp_map = '<leader>p'
+" let g:ctrlp_cmd = 'CtrlP'
+" map <leader>p :CtrlP<CR>
+" map <leader>F :CtrlPMRU<CR>
+" let g:ctrlp_custom_ignore = {
+    " \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
+    " \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc)$',
+    " \ }
+" let g:ctrlp_working_path_mode=0
+" let g:ctrlp_match_window_bottom=1
+" let g:ctrlp_max_height=15
+" let g:ctrlp_match_window_reversed=0
+" let g:ctrlp_mruf_max=500
+" let g:ctrlp_follow_symlinks=1
 
 "===============================
 " ctrlp-funky 配置
 "===============================
-nnoremap <Leader>fu :CtrlPFunky<Cr>
+" nnoremap <Leader>fu :CtrlPFunky<Cr>
 " narrow the list down with a word under cursor
-nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
-let g:ctrlp_funky_syntax_highlight = 1
-let g:ctrlp_extensions = ['funky']
+" nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+" let g:ctrlp_funky_syntax_highlight = 1
+" let g:ctrlp_extensions = ['funky']
 
 "===============================
 " whitespace 配置
@@ -287,3 +287,25 @@ endif
 " brew tap homebrew/cask-fonts
 " brew install --cask font-hack-nerd-font
 " 然后设计终端字体 https://blog.csdn.net/TCatTime/article/details/104146531
+
+
+"===============================
+" LeaderF 配置
+" https://github.com/Yggdroot/LeaderF
+"===============================
+" :LeaderfInstallCExtension 安装 c 语言扩展，可以提高 10 倍速度
+" echo g:Lf_fuzzyEngine_C  输出 =1，代表使用 C 引擎成功
+" 按照路径查找
+map <leader>p :Leaderf file --popup<CR>
+" map <leader>f :Leaderf buffer<CR>
+" 最近用过最多的文件，全部路径
+" map <leader>f :Leaderf mru<CR>
+" 最近用过最多的文件，当前路径
+map <leader>f :Leaderf mru --cwd --popup<CR>
+" 查找当前缓存
+map <leader>fb :Leaderf buffer --popup<CR>
+" 查找方法
+" /Library/Developer/CommandLineTools/usr/bin/ctags: illegal option -- n
+" 如果出现上述 BUG，需要安装最新版本 ctags
+" 命令 brew install ctags
+map <leader>fu :Leaderf function --popup<CR>
