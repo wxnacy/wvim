@@ -278,3 +278,12 @@ if has("persistent_undo")
     let &undodir=target_path
     set undofile
 endif
+
+"===============================
+" vim-devicons 配置
+" https://github.com/ryanoasis/vim-devicons
+"===============================
+" 需要安装字体 https://github.com/ryanoasis/nerd-fonts
+" brew tap homebrew/cask-fonts
+" brew install --cask font-hack-nerd-font
+" 然后设计终端字体 https://blog.csdn.net/TCatTime/article/details/104146531
