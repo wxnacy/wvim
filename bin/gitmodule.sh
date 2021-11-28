@@ -23,6 +23,7 @@ git submodule add --force https://github.com/tpope/vim-fugitive                b
 git submodule add --force https://github.com/mbbill/undotree.git               bundle/undotree                # 查看历史记录
 git submodule add --force https://github.com/ryanoasis/vim-devicons            bundle/vim-devicons            # 显示开发环境图标
 git submodule add --force https://github.com/Yggdroot/LeaderF                  bundle/LeaderF                 # 文件搜索
+git submodule add --force https://github.com/iamcco/markdown-preview.vim       bundle/markdown-preview.vim    # markdown 文件预览
 # git submodule add --force https://github.com/morhetz/gruvbox                   bundle/gruvbox                 # 一种配色方案
 # git submodule add --force https://github.com/Valloric/YouCompleteMe            bundle/YouCompleteMe           # 代码补全
 

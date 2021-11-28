@@ -309,3 +309,16 @@ map <leader>fb :Leaderf buffer --popup<CR>
 " 如果出现上述 BUG，需要安装最新版本 ctags
 " 命令 brew install ctags
 map <leader>fu :Leaderf function --popup<CR>
+
+
+"===============================
+" markdown-preview.vim 配置
+" https://github.com/iamcco/markdown-preview.vim
+"===============================
+" let g:mkdp_auto_open = 1
+" 打开预览模式
+map <leader>mo <Plug>MarkdownPreview
+imap <leader>mo <Plug>MarkdownPreview
+" 关闭预览模式
+map <leader>ms <Plug>StopMarkdownPreview
+imap <leader>ms <Plug>StopMarkdownPreview

@@ -67,3 +67,6 @@
 [submodule "bundle/LeaderF"]
 	path = bundle/LeaderF
 	url = https://github.com/Yggdroot/LeaderF
+[submodule "bundle/markdown-preview.vim"]
+	path = bundle/markdown-preview.vim
+	url = https://github.com/iamcco/markdown-preview.vim
