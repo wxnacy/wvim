@@ -38,7 +38,7 @@ nnoremap u <nop>
 " 模式切换 ================== {{{
 
 " 快速返回常用模式
-inoremap JK <esc>
+inoremap jk <esc>
 vnoremap JK <esc>
 
 " 插入模式快速移动到行首和行尾
