@@ -73,3 +73,6 @@
 [submodule "bundle/gv.vim"]
 	path = bundle/gv.vim
 	url = https://github.com/junegunn/gv.vim
+[submodule "bundle/vimcdoc"]
+	path = bundle/vimcdoc
+	url = https://github.com/yianwillis/vimcdoc
