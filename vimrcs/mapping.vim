@@ -21,6 +21,9 @@ nnoremap <Leader>vsjs :vsp ~/.vim/syntax/javascript.vim<CR>
 nnoremap <Leader>vsj :vsp ~/.vim/syntax/java.vim<CR>
 nnoremap <Leader>br :vsp ~/.bashrc<CR>
 nnoremap <Leader>bp :vsp ~/.bash_profile<CR>
+
+" 竖分屏打开帮助文档
+nnoremap <Leader>vh :vert h<space>
 " 快速查看 messages
 nnoremap <Leader>vm :messages<CR>
 " 去掉高亮
@@ -35,7 +38,7 @@ nnoremap u <nop>
 " 模式切换 ================== {{{
 
 " 快速返回常用模式
-inoremap jk <esc>
+inoremap JK <esc>
 vnoremap JK <esc>
 
 " 插入模式快速移动到行首和行尾
