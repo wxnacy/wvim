@@ -3,7 +3,7 @@
 " Author: wxnacy <wxnacy@gmail.com>
 " URL: https://wxnacy.com
 " Created: 2017-08-27
-" Modified: 2021-11-28
+" Modified: 2021-11-29
 " Description: 插件配置
 "===============================
 
@@ -322,3 +322,10 @@ imap <leader>mo <Plug>MarkdownPreview
 " 关闭预览模式
 map <leader>ms <Plug>StopMarkdownPreview
 imap <leader>ms <Plug>StopMarkdownPreview
+
+"===============================
+" gv.vim 配置
+" https://github.com/junegunn/gv.vim
+" 需要先安装 vim-fugitive
+"===============================
+map <leader>gv :GV<CR>

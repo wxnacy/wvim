@@ -19,7 +19,8 @@ git submodule add --force https://github.com/mileszs/ack.vim.git               b
 git submodule add --force https://github.com/sjl/gundo.vim                     bundle/gundo.vim               # 查看文件编辑历史记录
 git submodule add --force https://github.com/ervandew/supertab                 bundle/supertab                # tab 进行补全
 git submodule add --force https://github.com/scrooloose/syntastic              bundle/syntastic               # 语法检查
-git submodule add --force https://github.com/tpope/vim-fugitive                bundle/vim-fugitive            # github 插件
+git submodule add --force https://github.com/tpope/vim-fugitive                bundle/vim-fugitive            # git 插件
+git submodule add --force https://github.com/junegunn/gv.vim                   bundle/gv.vim                  # 显示 git 提交浏览器，需要配合 vim-fugitive 使用
 git submodule add --force https://github.com/mbbill/undotree.git               bundle/undotree                # 查看历史记录
 git submodule add --force https://github.com/ryanoasis/vim-devicons            bundle/vim-devicons            # 显示开发环境图标
 git submodule add --force https://github.com/Yggdroot/LeaderF                  bundle/LeaderF                 # 文件搜索

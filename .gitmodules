@@ -70,3 +70,6 @@
 [submodule "bundle/markdown-preview.vim"]
 	path = bundle/markdown-preview.vim
 	url = https://github.com/iamcco/markdown-preview.vim
+[submodule "bundle/gv.vim"]
+	path = bundle/gv.vim
+	url = https://github.com/junegunn/gv.vim
