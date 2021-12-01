@@ -338,3 +338,9 @@ imap <leader>ms <Plug>StopMarkdownPreview
 " 需要先安装 vim-fugitive
 "===============================
 map <leader>gv :GV<CR>
+
+"===============================
+" tagbar 配置
+" https://github.com/preservim/tagbar
+"===============================
+nmap <leader>tb :TagbarToggle<CR>
