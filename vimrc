@@ -107,6 +107,12 @@ set mouse=a       				"启用鼠标"
 set foldlevelstart=99           "默认不折叠"
 set foldmethod=indent           "按照缩紧折叠"
 
+" 临时文件路径
+" set directory=$HOME/.vim/temp//
+" set backupdir=$HOME/.vim/temp//
+set directory=/tmp//            " for swp"
+set backupdir=/tmp//
+
 " if exists('$TMUX')
   " set term=screen-256color
 " endif
