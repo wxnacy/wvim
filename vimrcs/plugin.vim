@@ -344,3 +344,13 @@ map <leader>gv :GV<CR>
 " https://github.com/preservim/tagbar
 "===============================
 nmap <leader>tb :TagbarToggle<CR>
+
+"===============================
+" ultisnips 配置
+" https://github.com/SirVer/ultisnips
+"===============================
+let g:UltiSnipsExpandTrigger="<c-l>"
+let g:UltiSnipsJumpForwardTrigger="<c-f>"
+let g:UltiSnipsJumpBackwardTrigger="<c-b>"
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsSnippetStorageDirectoryForUltiSnipsEdit="~/.vim/ultisnips"

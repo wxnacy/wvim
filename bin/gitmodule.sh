@@ -27,6 +27,8 @@ git submodule add --force https://github.com/Yggdroot/LeaderF                  b
 git submodule add --force https://github.com/iamcco/markdown-preview.vim       bundle/markdown-preview.vim    # markdown 文件预览
 git submodule add --force https://github.com/yianwillis/vimcdoc                bundle/vimcdoc                 # vim 中文文档
 git submodule add --force https://github.com/preservim/tagbar                  bundle/tagbar                  # 文件标签菜单
+git submodule add --force https://github.com/SirVer/ultisnips                  bundle/ultisnips               # 代码片段
+git submodule add --force https://github.com/honza/vim-snippets                bundle/vim-snippets            # 具体代码片段
 
 # git submodule add --force https://github.com/morhetz/gruvbox                   bundle/gruvbox                 # 一种配色方案
 # git submodule add --force https://github.com/Valloric/YouCompleteMe            bundle/YouCompleteMe           # 代码补全
