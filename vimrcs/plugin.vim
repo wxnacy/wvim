@@ -360,6 +360,9 @@ let g:UltiSnipsSnippetStorageDirectoryForUltiSnipsEdit="~/.vim/ultisnips"
 " fzf.vim 配置
 " https://github.com/junegunn/fzf
 " https://github.com/junegunn/fzf.vim
+" 参考:
+" https://github.com/junegunn/fzf/blob/master/README-VIM.md
+" https://segmentfault.com/a/1190000016186540
 "===============================
 nmap <Leader><Leader>a :Rg<CR>
 nmap <Leader>gl :Commits<CR>
