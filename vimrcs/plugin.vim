@@ -354,3 +354,21 @@ let g:UltiSnipsJumpForwardTrigger="<c-f>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetStorageDirectoryForUltiSnipsEdit="~/.vim/ultisnips"
+
+
+"===============================
+" fzf.vim 配置
+" https://github.com/junegunn/fzf
+" https://github.com/junegunn/fzf.vim
+"===============================
+nmap <Leader><Leader>a :Rg<CR>
+nmap <Leader>gl :Commits<CR>
+nmap <Leader>fl :BLines<CR>
+nmap <Leader>fc :Commands<CR>
+nmap <Leader>ff :Files<CR>
+nmap <Leader>bm :call fzf#run({'source': 'bm ls', 'sink': 'e', 'tmux': '-p90%,60%', 'window': { 'width': 0.9, 'height': 0.6  }})<CR>
+" if exists('$TMUX')
+  " let g:fzf_layout = { 'tmux': '-p90%,60%' }
+" else
+  " let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+" endif
