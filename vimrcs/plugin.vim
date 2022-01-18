@@ -364,12 +364,29 @@ let g:UltiSnipsSnippetStorageDirectoryForUltiSnipsEdit="~/.vim/ultisnips"
 " https://github.com/junegunn/fzf/blob/master/README-VIM.md
 " https://segmentfault.com/a/1190000016186540
 "===============================
+let g:fzf_history_dir="~/.fzf.vim_history"
 nmap <Leader><Leader>a :Rg<CR>
+nmap <Leader>fa :Rg<CR>
 nmap <Leader>gl :Commits<CR>
 nmap <Leader>fl :BLines<CR>
 nmap <Leader>fc :Commands<CR>
 nmap <Leader>ff :Files<CR>
 nmap <Leader>bm :call fzf#run({'source': 'bm ls', 'sink': 'e', 'tmux': '-p90%,60%', 'window': { 'width': 0.9, 'height': 0.6  }})<CR>
+" 代码补全
+" https://github.com/junegunn/fzf.vim#mappings
+inoremap <expr> <c-x><c-k> fzf#vim#complete('cat /usr/share/dict/words')
+inoremap <expr> <c-x><c-l> fzf#vim#complete(fzf#wrap({
+  \ 'prefix': '^.*$',
+  \ 'source': 'rg -n ^ --color always',
+  \ 'options': '--ansi --delimiter : --nth 3..',
+  \ 'reducer': { lines -> join(split(lines[0], ':\zs')[2:], '') }}))
+function! s:make_sentence(lines)
+return substitute(join(a:lines), '^.', '\=toupper(submatch(0))', '').'.'
+endfunction
+
+imap <c-x><c-k> <plug>(fzf-complete-word)
+inoremap <expr> <c-x><c-f> fzf#vim#complete#path('rg --files --hidden')
+imap <c-x><c-l> <plug>(fzf-complete-line)
 " if exists('$TMUX')
   " let g:fzf_layout = { 'tmux': '-p90%,60%' }
 " else
