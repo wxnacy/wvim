@@ -4,13 +4,13 @@ inoremap <buffer> <Leader>/ """"""<esc>hhi
 setlocal foldmethod=indent
 setlocal foldignore=
 
-iabbrev <buffer> main if __name__ == "__main__":<cr>
-iabbrev <buffer> init def __init__(self, *args, **kwargs):<cr>
-iabbrev <buffer> fh #!/usr/bin/env python<cr>
-                    \# -*- coding:utf-8 -*-<cr>
-                    \# Author: wxnacy
-                    \(wxnacy@gmail.com)<cr>
-                    \"""<cr>
+" iabbrev <buffer> main if __name__ == "__main__":<cr>
+" iabbrev <buffer> init def __init__(self, *args, **kwargs):<cr>
+" iabbrev <buffer> fh #!/usr/bin/env python<cr>
+                    " \# -*- coding:utf-8 -*-<cr>
+                    " \# Author: wxnacy
+                    " \(wxnacy@gmail.com)<cr>
+                    " \"""<cr>
 
 iabbrev <buffer> utmain   import unittest<cr><cr>
                                 \class TestMain(unittest.TestCase):<cr><cr>
