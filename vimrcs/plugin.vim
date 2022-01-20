@@ -365,7 +365,7 @@ let g:UltiSnipsSnippetStorageDirectoryForUltiSnipsEdit="~/.vim/ultisnips"
 " https://segmentfault.com/a/1190000016186540
 "===============================
 let g:fzf_history_dir="~/.fzf.vim_history"
-nmap <Leader><Leader>a :Rg<CR>
+" nmap <Leader><Leader>a :Rg<CR>
 nmap <Leader>fa :Rg<CR>
 nmap <Leader>gl :Commits<CR>
 nmap <Leader>fl :BLines<CR>
