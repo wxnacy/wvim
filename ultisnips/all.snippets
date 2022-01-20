@@ -3,6 +3,10 @@ from datetime import datetime
 def fmt_time(fmt):
 	"""格式化时间"""
 	return datetime.now().strftime(fmt)
+
+def get_author(snip):
+	"""获取 g: 变量"""
+	return snip.opt('g:author', 'g:wvim_author')
 endglobal
 
 snippet dt "获取完整日期和时间"

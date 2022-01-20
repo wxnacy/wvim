@@ -8,4 +8,4 @@
 "===============================
 
 let g:wvim_plugin_home = expand("$HOME/.vim/bundle")
-let g:wvim_author = ''
+let g:wvim_author = 'wxnacy <wxnacy@gmail.com>'

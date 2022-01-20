@@ -354,6 +354,8 @@ let g:UltiSnipsJumpForwardTrigger="<c-f>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetStorageDirectoryForUltiSnipsEdit="~/.vim/ultisnips"
+" 快速修改代码片段
+nmap <leader>ue :UltiSnipsEdit<CR>
 
 
 "===============================

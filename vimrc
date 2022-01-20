@@ -127,6 +127,10 @@ so ~/.vim/vimrcs/functions.vim
 if filereadable(expand("$HOME/.vim/local-constants.vim"))
   so ~/.vim/local-constants.vim
 endif
+" 判断并加载自定义文件
+if filereadable(expand("$HOME/.vim/local.vim"))
+  so ~/.vim/local.vim
+endif
 
 au BufNewFile,BufRead *zprofile set filetype=sh
 au BufNewFile,BufRead *bash_aliases set filetype=sh
