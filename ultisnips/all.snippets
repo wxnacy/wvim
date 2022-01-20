@@ -1,0 +1,13 @@
+global !p
+from datetime import datetime
+def fmt_time(fmt):
+	"""格式化时间"""
+	return datetime.now().strftime(fmt)
+endglobal
+
+snippet dt "获取完整日期和时间"
+`!p snip.rv = fmt_time("%Y-%m-%d %H:%M:%S")`
+endsnippet
+snippet time "获取完整时间"
+`!p snip.rv = fmt_time("%H:%M:%S")`
+endsnippet
