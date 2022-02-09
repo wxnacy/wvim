@@ -350,8 +350,8 @@ nmap <leader>tb :TagbarToggle<CR>
 " https://github.com/SirVer/ultisnips
 "===============================
 let g:UltiSnipsExpandTrigger="<c-l>"
-let g:UltiSnipsJumpForwardTrigger="<c-f>"
-let g:UltiSnipsJumpBackwardTrigger="<c-b>"
+let g:UltiSnipsJumpForwardTrigger="<c-n>"
+let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetStorageDirectoryForUltiSnipsEdit="~/.vim/ultisnips"
 " 快速修改代码片段
