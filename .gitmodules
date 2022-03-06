@@ -85,3 +85,6 @@
 [submodule "bundle/fzf.vim"]
 	path = bundle/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
+[submodule "bundle/cheat.sh-vim"]
+	path = bundle/cheat.sh-vim
+	url = https://github.com/dbeniamine/cheat.sh-vim
