@@ -394,3 +394,13 @@ imap <c-x><c-l> <plug>(fzf-complete-line)
 " else
   " let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
 " endif
+
+"===============================
+" ranger.vim 配置
+" https://github.com/francoiscabrol/ranger.vim
+"===============================
+let g:ranger_map_keys = 0
+map <leader>ra :Ranger<CR>
+let g:NERDTreeHijackNetrw = 0   " add this line if you use NERDTree"
+let g:ranger_replace_netrw = 1  " open ranger when vim open a directory"
+" let g:ranger_command_override = 'ranger --cmd "set show_hidden=true"'

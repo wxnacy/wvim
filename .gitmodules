@@ -88,3 +88,6 @@
 [submodule "bundle/cheat.sh-vim"]
 	path = bundle/cheat.sh-vim
 	url = https://github.com/dbeniamine/cheat.sh-vim
+[submodule "bundle/ranger.vim"]
+	path = bundle/ranger.vim
+	url = https://github.com/francoiscabrol/ranger.vim
