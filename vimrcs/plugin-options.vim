@@ -45,6 +45,11 @@ if filereadable(g:wvim_plugin_home . "/jedi-vim/Makefile")
 
     let g:pymode_rope = 0                       " 禁用 python-mode 的绳索模式"
     " let g:jedi#completions_enabled = 0        " 是否启用补全"
+    # 使用 python 路径
+    if filereadable(expand("$HOME/.pyenv/README.md"))
+        let g:jedi#environment_path = expand("$HOME/.pyenv/shims/python")
+    endif
+
 endif
 
 "===============================
