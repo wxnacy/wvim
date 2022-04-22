@@ -41,3 +41,8 @@ $ source ~/.bash_profile
 $ git clone --recursive https://github.com/davidhalter/jedi-vim.git ~/.vim/bundle/jedi-vim
 $ pip install jedi
 ```
+
+***注意***
+
+- YouCompleteMe 使用当前系统默认 python 作为驱动，通常为 python3，如果三方包无法实现补全，需要使用 pip3 安装一次包才可以实现补全
+- jedi 在使用 `<Leader>g` 进行代码跳转时，依赖 `jedi#environment_path` 参数指定 python 虚拟环境，如果使用 `pyenv` 可以指定参数为 `let g:jedi#environment_path = expand("$HOME/.pyenv/shims/python")`
