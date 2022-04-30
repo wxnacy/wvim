@@ -24,6 +24,14 @@ $ curl -L https://raw.githubusercontent.com/wxnacy/wvim/master/install | bash
 
 [Vim 插件 YouCompleteMe 代码自动补全](https://wxnacy.com/2017/09/22/vim-plugin-youcompleteme/)
 
+mac 最新系统安装方式
+
+```bash
+> brew install cmake python go nodejs
+> ./install.py --all
+> /usr/local/opt/python@3.9/bin/python3.9 /Users/wxnacy/.wvim/bundle/YouCompleteMe/third_party/ycmd/build.py --all --verbose
+```
+
 ### Go
 
 ```bash
