@@ -60,3 +60,14 @@ endif
 if filereadable(g:wvim_plugin_home . "/vim-javacomplete2/README.md")
     autocmd FileType java setlocal omnifunc=javacomplete#Complete
 endif
+
+"===============================
+" go 插件
+" vim-go 配置
+" https://github.com/fatih/vim-go
+"===============================
+if filereadable(g:wvim_plugin_home . "/vim-go/README.md")
+    au FileType go nmap <Leader>gs <Plug>(go-def-split)
+    au FileType go nmap <Leader>g <Plug>(go-def-vertical)
+    au FileType go nmap <Leader>gt <Plug>(go-def-tab)
+endif
