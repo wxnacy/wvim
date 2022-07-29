@@ -18,6 +18,7 @@ let g:solarized_termcolors=256
 
 "===============================
 " NERDTree 配置
+" https://github.com/preservim/nerdtree
 "===============================
 autocmd vimenter * NERDTree     " 启动vim默认打开菜单
 nnoremap tt :NERDTreeToggle<CR>       " 快速打开隐藏菜单栏
@@ -31,6 +32,8 @@ let NERDTreeShowBookmarks=1     " 显示书签列表
 let NERDTreeHighlightCursorline = 1 " 高亮当前行
 let NERDTreeQuitOnOpen = 1      " 从菜单打开文件后关闭菜单
 let NERDTreeWinPos ="left"      " 设置菜单在左侧打开，默认值
+let NERDTreeWinSize=50
+" let g:NERDTreeHighlightFoldersFullName = 1
 
 "===============================
 " vim-nerdtree-tabs 配置
